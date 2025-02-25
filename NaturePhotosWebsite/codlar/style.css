@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 7px;
+}
+body {
+    font-family: "Sofia", sans-serif;
+    /** rem çarpan gibi düşün 1.6 10 ile çarpılıcak.*/
+    /** tek bir noktadan değişiklik yapmak istediğimiz için dedik.*/
+    /** fontu değiştirdiğimizde her yerdeki font değişsindedik.*/
+    /** Rem kullanımı responsive tasarımlarda önemli.*/
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-align: center;
+    color: #fff;
+    background-color: rgb(90, 89, 89);
+}
+a{
+    text-decoration: none;
+}
+p{
+    padding: 1.6rem 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+header {
+    height: 47rem;
+}
+header .bg-img {
+    background-image: url(../img/manzara.jpg);
+    background-size: cover ;
+    /** konumunu veriyoruz.*/
+    background-position:center ;
+    height: 47rem;
+    width: 100%;
+    /** görselin solgun olması.*/
+    opacity: 0.6;
+    /** resmin yazının altında olması için.*/
+    position: absolute;
+    /** görseli bir alt zemine göndermek için.*/
+    z-index: -1;
+}
+/** yazıyı resmin üstüne almak.*/
+header h1 {
+    padding: 12rem;
+    padding-bottom: 0;
+}
+/**linki butona dönüştürme.*/
+.lie-btn {
+    display: inline-block;
+    background: rgb(90, 89, 89);
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 1.2rem 3rem;
+    margin: .5rem 0;
+}
+.lie-btn:hover {
+    background-color: #fff;
+    color: rgb(90, 89, 89);
+    transition: all 0.5s;
+}
+#section-one {
+    background: #eaeaea;
+    color: #333;
+    padding: 3rem 0;
+}
+#section-two {
+    padding: 2rem;
+}
+/** listelerin nokta imgelerini kaldırmak için.*/
+#section-two ul {
+    list-style: none;
+}
+#section-two li {
+    background: #fff;
+    color: #333;
+    margin-bottom: 1.3rem;
+}
+.col-content {
+    padding: 1.2rem;
+}
+#section-three {
+    background-color: #eaeaea;
+    color: #333;
+    padding: 5rem;
+}
+#section-four .box {
+    padding: 5rem;
+}
+#section-four a {
+    color: rgb(143, 221, 221);
+}
+#section-four .box:first-child {
+    background-color: teal;
+}
+footer {
+    padding: 4rem;
+    background: black;
+}
+footer a {
+    color: crimson;
+}
+.box img {
+    width: 20px;
+    height: auto;
+}
+.insta {
+    border-radius: 4px;
+}
+@media screen and (min-width:800px) {
+    html {
+        font-size: 9px;
+    }
+}
+@media screen and (min-width:1200px) {
+    html {
+        font-size: 12px;
+    }
+    #section-two li{
+        width: 27%;
+        margin: 1%;
+        display: inline-block;
+    }
+    #section-four{
+        display: flex;
+    }
+
+}
